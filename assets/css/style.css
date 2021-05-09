@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+}
+:root {
+    --primary-color: #F04621;
+    --secondary-color: #111010;
+    --tertiary-color: #b4aeae;
+}
+
+body {
+    color: var(--secondary-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* apply style to header title*/
+header {
+
+}
+
+header h1 {
+
+}
+
+header h1 a {
+
+}
+
+/* apply style to header nav */
+header h1 nav {
+
+}
+
+header h1 nav ul {
+
+}
+
+header h1 nav ul li {
+
+}
+
+header h1 nav ul li a {
+
+}
+/* end header */
+
+/* footer styling start */
+footer {
+
+}
+
+footer h3 {
+
+}
+/* footer end */
+
+/* about me style */
+.about-me {
+
+}
+
+.about-me h2 {
+
+}
+
+.about-me img {
+
+}
+
+.about-me p {
+
+}
+
+.about-me p span {
+
+}
+
+/* about me end */
+
+/* portfolio page start */
+.portfolio {
+
+}
+
+.portfolio h2 {
+
+}
+
+.run-buddy-container {
+
+}
+
+.flex-container {
+
+}
+
+.flex-container a {
+
+}
+
+.horiseon {
+
+}
+/* end portfolio page */
+
+/* start contact page styling*/
+.contact-info {
+
+}
+
+.contact-info h2 {
+
+}
+
+.contact-me {
+
+}
+
+.contact-me a {
+
+}
+
+.contact-me a span {
+
+}
+
+/* end contact page */
+
+/* start footer styling */
+footer {
+
+}
+
+footer h3{
+
+}
+/* end footer styling */
+
+/*alternate media screen stylings */
+@media screen and (max-width:980px){
+    
+}
+
+@media screen and (max-width:768px){
+    
+}
+
+@media screen and (max-width:575px){
+    
+}
+
+/* Utilities */
