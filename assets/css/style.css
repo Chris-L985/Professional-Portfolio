@@ -3,59 +3,87 @@
 }
 :root {
     --primary-color: #F04621;
-    --secondary-color: #111010;
-    --tertiary-color: #b4aeae;
+    --secondary-color: #333131;
+    --tertiary-color: #585858;
+    --text-color: #ffffff;
 }
 
 body {
     color: var(--secondary-color);
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #e2e1e1;
 }
 
 /* apply style to header title*/
 header {
-
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: var(--secondary-color);
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
 }
 
 header h1 {
-
+    font-family: cursive-font, serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--primary-color);
+    margin: 0px;
+    padding: 8px 10px 4px 14px;
+    border:0px 4px 0px 50px solid var(--primary-color);
 }
 
-header h1 a {
-
+header a {
+    text-decoration: none;
+    color: var(--text-color)
 }
 
 /* apply style to header nav */
-header h1 nav {
-
+header nav {
+    margin: 9px 0;
 }
 
-header h1 nav ul {
-
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
-header h1 nav ul li {
-
-}
-
-header h1 nav ul li a {
-
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: normal;
+    font-size: 1.5vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /* end header */
 
 /* footer styling start */
 footer {
-
+    width: 100%;
+    background: var(--secondary-color);
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer h3 {
-
+    font-size: 28px;
+    color: var(--text-color);
+    margin: 0px;
 }
 /* footer end */
 
 /* about me style */
 .about-me {
-
+   margin; 
 }
 
 .about-me h2 {
@@ -77,6 +105,16 @@ footer h3 {
 /* about me end */
 
 /* portfolio page start */
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
 .portfolio {
 
 }
@@ -125,6 +163,11 @@ footer h3 {
 
 /* end contact page */
 
+/* Utilities */
+section {
+    padding: 40px;
+}
+
 /* start footer styling */
 footer {
 
@@ -147,5 +190,3 @@ footer h3{
 @media screen and (max-width:575px){
     
 }
-
-/* Utilities */
