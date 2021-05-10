@@ -172,37 +172,56 @@ footer h3 {
 }
 
 .run-buddy-container {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 1000px;
+    max-height: 500px;
     width: 50%;
     display: flex;
     justify-content: right;
     background-image: url(../images/run-buddy.jpg);
     margin-top: 30px;
     padding-top: 150px;
-    margin-left: 500px;
+    margin-left: 300px;
     border: 5px solid var(--secondary-color);
 }
 
+.run-buddy-container a {
+    height: 120px;
+    width: 250;
+    background-color: teal;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 300px;
+}
+
 .horiseon {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
     width: 50%;
     display: flex;
     justify-content: center;
     background-image: url(../images/digital-marketing-meeting.jpg);
     margin-top: 50px;
     padding-top: 150px;
-    margin-left: 550px;
+    margin-left: 300px;
     margin-bottom: 15px;
     border: 5px solid var(--secondary-color);
+}
+
+.horiseon a {
+    height: 120px;
+    width: 250;
+    background-color: rgb(69, 69, 212);
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
 }
 /* end portfolio page */
 
 /* start contact page styling*/
 .contact-info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 20px 15px;
 }
 
@@ -215,7 +234,15 @@ footer h3 {
 }
 
 .contact-me a {
-
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-style: oblique;
+    text-decoration: none;
+    text-shadow: rgba(0, 0, 0, 0.25);
+    color: var(--text-color);
 }
 
 .contact-me a span {
@@ -231,7 +258,9 @@ section {
 
 /* start footer styling */
 footer {
-
+    display: flex;
+    padding: 0px;
+    margin: 0px;
 }
 
 footer h3{
