@@ -179,41 +179,20 @@ footer h3 {
 
 }
 
-.run-buddy-container {
-    max-width: 1000px;
-    max-height: 500px;
+.run-buddy-container img {
+    width: auto;
+    height: 400px;
     width: 50%;
     display: flex;
-    justify-content: right;
-    background-image: url(../images/run-buddy.jpg);
     margin-top: 30px;
-    padding-top: 150px;
-    margin-left: 300px;
+    padding-top: 0px;
+    margin-left: 550px;
     border: 5px solid var(--secondary-color);
+    filter: brightness(50%);
 }
 
-.run-buddy-container a {
-    height: 120px;
-    width: 250;
-    background-color: teal;
-    color: var(--text-color);
-    text-decoration: none;
-    font-weight: bold;
-    margin-left: 300px;
-}
-
-.horiseon {
-    max-width: 300px;
-    max-height: 300px;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    background-image: url(../images/digital-marketing-meeting.jpg);
-    margin-top: 50px;
-    padding-top: 150px;
-    margin-left: 300px;
-    margin-bottom: 15px;
-    border: 5px solid var(--secondary-color);
+.run-buddy-container img:hover {
+    filter: brightness(100%);
 }
 
 .horiseon a {
@@ -224,6 +203,25 @@ footer h3 {
     text-decoration: none;
     font-weight: bold;
 }
+
+.horiseon a img {
+    max-width: 300px;
+    max-height: 300px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-top: 0px;
+    margin-left: 550px;
+    margin-bottom: 15px;
+    border: 5px solid var(--secondary-color);
+    filter: brightness(50%)
+}
+
+.horiseon a img:hover {
+    filter: brightness(100%);
+}
+
 /* end portfolio page */
 
 /* start contact page styling*/
@@ -255,6 +253,13 @@ footer h3 {
     text-shadow: rgba(0, 0, 0, 0.25);
     color: var(--text-color);
 }
+
+.contact-me a:hover {
+    background:var(--primary-color);
+    color: lightgray;
+    border-radius: 5px;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.45);
+}
 /* end contact page */
 
 /* Utilities */
@@ -263,14 +268,90 @@ section {
 }
 
 /*alternate media screen stylings */
+@media screen and (max-width:1400px){
+    .run-buddy-container img {
+        margin-left: 320px;
+    }
+    .horiseon a img {
+        margin-left: 320px;
+    }
+}
+
+@media screen and (max-width:1250px){
+
+    .header {
+        width: 100%;
+        position: relative;
+       flex-wrap: wrap;
+    }
+    .header h1 {
+        width: 100%;
+        text-align:center;
+    }
+    nav {
+        width: 90%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    .run-buddy-container img {
+        margin-left: 300px;
+    }
+    .horiseon a img {
+        margin-left: 300px;
+    }
+}
+
 @media screen and (max-width:980px){
-    
+    .run-buddy-container img {
+        margin-left: 220px;
+    }
+    .horiseon a img {
+        margin-left: 220px;
+    }
+    .about-me p {
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+    }
 }
 
 @media screen and (max-width:768px){
-    
+    .header nav ul li a {
+        font-size:  20px;
+    }
+    .run-buddy-container img {
+        margin-left: 130px;
+    }
+    .horiseon a img {
+        margin-left: 130px;
+    }
+    .about-me p {
+        margin-bottom: 20px;
+    }
+    .about-me img {
+        margin: auto auto auto 20px;
+    }
 }
 
 @media screen and (max-width:575px){
-    
+    .run-buddy-container img {
+        margin-left: 120px;
+        margin-bottom: 10px;
+    }
+    .horiseon a img {
+        margin-left: 120px;
+    }
+    .header nav ul li a {
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+    }
+    .about-me p {
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+    }
+    .about-me {
+        display: inline-block;
+    }
 }
