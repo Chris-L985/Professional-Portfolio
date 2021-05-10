@@ -2,7 +2,7 @@
     margin: 0;
 }
 :root {
-    --primary-color: #F04621;
+    --primary-color: #80210c;
     --secondary-color: #333131;
     --tertiary-color: #585858;
     --text-color: #ffffff;
@@ -28,7 +28,7 @@ header {
 }
 
 header h1 {
-    font-family: cursive-font, serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     font-size: 40px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -46,6 +46,7 @@ header a {
 /* apply style to header nav */
 header nav {
     margin: 9px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header nav ul {
@@ -59,7 +60,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: normal;
-    font-size: 1.5vw;
+    font-size: 2vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /* end header */
@@ -83,23 +84,55 @@ footer h3 {
 
 /* about me style */
 .about-me {
-   margin; 
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+
 }
 
 .about-me h2 {
+    font-size: 48px;
+    border-bottom: 3px solid;
+    border-width: 5px;
+    color: var(--text-color);
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0px auto 15px auto;
+    width: 100%;
+    background-color: var(--secondary-color);
 
 }
 
 .about-me img {
-
+    max-width: 200px;
+    max-height: 200px;
+    border: 5px solid var(--secondary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 15px 60px 25px 60px;
 }
 
 .about-me p {
-
+   flex: 12;
+   margin-right: 25px;
+   margin-bottom: auto;
+   margin-top: 25px;
+   color: var(--text-color);
+   background-color: rgba(0, 0, 0, 0.45);
+   border: solid 5px rgba(0, 0, 0, 0.45);
+   padding: 15px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .about-me p span {
-
+    color: var(--text-color);
+    
 }
 
 /* about me end */
@@ -116,37 +149,65 @@ footer h3 {
 }
 
 .portfolio {
-
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    align-items: center;
 }
 
 .portfolio h2 {
+    font-size: 48px;
+    border-width: 5px;
+    color: var(--text-color);
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0px auto 15px auto;
+    width: 100%;
+    background-color: var(--tertiary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 
 }
 
 .run-buddy-container {
-
-}
-
-.flex-container {
-
-}
-
-.flex-container a {
-
+    max-width: 300px;
+    max-height: 300px;
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    background-image: url(../images/run-buddy.jpg);
+    margin-top: 30px;
+    padding-top: 150px;
+    margin-left: 500px;
+    border: 5px solid var(--secondary-color);
 }
 
 .horiseon {
-
+    max-width: 200px;
+    max-height: 200px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/digital-marketing-meeting.jpg);
+    margin-top: 50px;
+    padding-top: 150px;
+    margin-left: 550px;
+    margin-bottom: 15px;
+    border: 5px solid var(--secondary-color);
 }
 /* end portfolio page */
 
 /* start contact page styling*/
 .contact-info {
-
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 15px;
 }
 
 .contact-info h2 {
-
+    color: var(--text-color);
 }
 
 .contact-me {
